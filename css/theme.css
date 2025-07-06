@@ -80,14 +80,15 @@ footer {
 
 /* reponsive mobile */
 @media (max-width: 767px) {
-  .menu{
+  .menu {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .menu-item{
+  .menu-item {
     width: 100%;
     border-bottom: 1px solid white;
   }
 }
+

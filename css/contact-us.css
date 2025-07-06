@@ -1,10 +1,12 @@
 h1{
     text-align: center;
 }
+
 form {
   margin-left: 20px;
   width: fit-content; /* Tùy chỉnh chiều rộng để gọn hơn */
 }
+
 .form-group {
   margin: 20px;
   font-weight: bold;
@@ -12,16 +14,16 @@ form {
 
 .form-container {
   width: 500px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   color: #000;
+  margin-top: 20px;
 }
 
 .form-row {
   display: flex;
-  /* margin-bottom: 12px; */
   align-items: flex-start;
-  margin: 20px;
 }
 
 .form-row label {
@@ -40,6 +42,12 @@ form {
   font-size: 14px;
 }
 
+.form-column{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .buttons {
   justify-content: center;
   gap: 10px;
@@ -49,6 +57,7 @@ form {
   margin-top: 20px;
   font-size: 14px;
 }
+
 .info-label {
   font-weight: bold;
   display: block;
@@ -61,4 +70,25 @@ form {
   gap: 5px;
   margin-bottom: 4px;
   font-weight: normal;
+}
+
+/* Validate form */
+
+.error {
+  border-radius: 4px;
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  margin-bottom: 10px;
+  display: block;
+  min-width: fit-content;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.form-row {
+  margin-bottom: 1rem;
 }

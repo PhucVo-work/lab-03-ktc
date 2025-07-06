@@ -40,38 +40,63 @@
           <form class="form-container">
             <div class="form-row">
               <label for="firstName">First Name:</label>
-              <input type="text" id="firstName" />
+              <div class="form-column">
+                <input type="text" id="firstName" />
+                <span class="error-message" id="firstNameError"></span>
+              </div>
             </div>
+
             <div class="form-row">
               <label for="lastName">Last Name:</label>
-              <input type="text" id="lastName" />
+              <div class="form-column">
+                <input type="text" id="lastName" />
+                <span class="error-message" id="lastNameError"></span>
+              </div>
             </div>
+
             <div class="form-row">
               <label for="email">Email:</label>
-              <input type="email" id="email" />
+              <div class="form-column">
+                <input type="email" id="email" />
+                <span class="error-message" id="emailError"></span>
+              </div>
             </div>
+
             <div class="form-row">
               <label for="phone">Phone:</label>
-              <input type="tel" id="phone" />
+              <div class="form-column">
+                <input type="tel" id="phone" />
+                <span class="error-message" id="phoneError"></span>
+              </div>
             </div>
 
             <div class="form-group">
               <label class="info-label">I would like information about:</label>
 
               <div class="checkbox-line">
-                <input type="checkbox" id="groupFitness" />
+                <input
+                  type="checkbox"
+                  id="groupFitness"
+                  class="info-checkbox"
+                />
                 <label for="groupFitness">Group Fitness</label>
               </div>
 
               <div class="checkbox-line">
-                <input type="checkbox" id="personalTraining" />
+                <input
+                  type="checkbox"
+                  id="personalTraining"
+                  class="info-checkbox"
+                />
                 <label for="personalTraining">Personal Training</label>
               </div>
 
               <div class="checkbox-line">
-                <input type="checkbox" id="nutrition" />
+                <input type="checkbox" id="nutrition" class="info-checkbox" />
                 <label for="nutrition">Nutrition</label>
               </div>
+
+              <span class="error-message" id="checkboxError"></span>
             </div>
 
             <div class="form-row">
@@ -92,27 +117,27 @@
               <button type="submit">Submit</button>
               <button type="reset">Reset Form</button>
             </div>
-
-            <div class="contact-info">
-              <p>
-                We are located at:<br />
-                COBI TOWER 2, 2-4 Street 8, Tan Phu<br />
-                District 7, Ho Chi Minh City
-              </p>
-
-              <p>
-                Phone Number<br />
-                0867 133 779
-              </p>
-
-              <p>
-                Email Address<br />
-                <a href="mailto:likelion.vn@likelion.net"
-                  >likelion.vn@likelion.net</a
-                >
-              </p>
-            </div>
           </form>
+
+          <div class="contact-info">
+            <p>
+              We are located at:<br />
+              COBI TOWER 2, 2-4 Street 8, Tan Phu<br />
+              District 7, Ho Chi Minh City
+            </p>
+
+            <p>
+              Phone Number<br />
+              0867 133 779
+            </p>
+
+            <p>
+              Email Address<br />
+              <a href="mailto:likelion.vn@likelion.net"
+                >likelion.vn@likelion.net</a
+              >
+            </p>
+          </div>
         </div>
       </main>
     </div>
@@ -120,5 +145,6 @@
       <p>Copyright &copy;. All Rights Reserved</p>
       <a href="mailto:likelion.vn@likelion.net">likelion.vn@likelion.net</a>
     </footer>
+    <script src="./validate-Form.js"></script>
   </body>
 </html>
